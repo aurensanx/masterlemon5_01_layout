@@ -1,0 +1,26 @@
+@import "layout.scss";
+
+body {
+  font-family: sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+  &>div {
+    color: white;
+    width: 15vh;
+    height: 15vh;
+    line-height: 15vh;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@include create-color-palet(red, 8);
+@include create-color-palet(green, 5);
+@include create-color-palet(blue, 11);
+
+

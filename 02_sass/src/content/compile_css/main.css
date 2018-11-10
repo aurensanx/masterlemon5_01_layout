@@ -1,0 +1,26 @@
+body {
+  font-family: "Trebuchet MS", Tahoma, sans-serif; }
+
+p.font-principal {
+  font-family: Times, Times New Roman, serif; }
+
+p.font-secondary {
+  font-family: FreeMono, monospace; }
+
+div > p {
+  padding: 5% 0 0 5%; }
+
+.box {
+  width: 15vh;
+  height: 15vh;
+  border: 1px solid black;
+  text-align: start;
+  border-radius: 0.5em; }
+  .box.shadow {
+    box-shadow: -0.8em 0.8em 1em; }
+  .box.base-color {
+    background-color: red; }
+  .box.dark-color {
+    background-color: #660000; }
+  .box.light-color {
+    background-color: #ff9999; }

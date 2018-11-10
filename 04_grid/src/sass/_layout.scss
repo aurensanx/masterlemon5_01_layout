@@ -1,0 +1,37 @@
+@mixin full-resolution {
+  display: grid;
+  grid-template-areas:
+          "nav-bar content-a"
+          "nav-bar content-b";
+
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 50vh 50vh;
+}
+
+@mixin medium-resolution {
+  .nav-bar {
+    flex-direction: row;
+    align-items: center;
+    // think of space, not content
+    height: 20vh;
+  }
+  .content-a, .content-b {
+    // think of space, not content
+    height: 40vh;
+  }
+}
+
+@mixin small-resolution {
+  .nav-bar {
+    flex-direction: row;
+    justify-content: flex-start;
+    a {
+      margin-right: 10px;
+    }
+  }
+  .content-a, .content-b {
+    // think of space, not content
+    height: 40vh;
+  }
+
+}

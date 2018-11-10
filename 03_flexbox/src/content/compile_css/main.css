@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  height: 100%; }
+
+.upper-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightpink;
+  font-size: 1.2em;
+  padding: 0 1% 0 1%; }
+
+.lower-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: lightgrey;
+  font-family: FreeMono, monospace; }
+  .lower-nav-bar > div {
+    background-color: white;
+    width: 100%;
+    margin: 1px; }
+
+@media screen and (max-width: 600px) {
+  #lemoncode {
+    display: none; }
+  .lower-nav-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0; } }

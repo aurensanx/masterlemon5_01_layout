@@ -1,0 +1,14 @@
+@mixin create-color-palet($baseColor, $weight) {
+  // base color
+  .#{$baseColor}-base { background-color: $baseColor};
+  @for $i from 1 through 4 {
+    // darker colors
+    .#{$baseColor}-#{dark}-#{$i} {
+      background-color: darken($baseColor, $i*$weight)
+    }
+    // lighter colors
+    .#{$baseColor}-#{light}-#{$i} {
+      background-color: lighten($baseColor, $i*$weight)
+    }
+  }
+}

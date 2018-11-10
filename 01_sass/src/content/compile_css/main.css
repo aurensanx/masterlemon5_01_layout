@@ -1,0 +1,96 @@
+body {
+  font-family: sans-serif; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2vh; }
+  .flex-container > div {
+    color: white;
+    width: 15vh;
+    height: 15vh;
+    line-height: 15vh;
+    font-weight: bold;
+    text-align: center; }
+
+.red-base {
+  background-color: red; }
+
+.red-dark-1 {
+  background-color: #d60000; }
+
+.red-light-1 {
+  background-color: #ff2929; }
+
+.red-dark-2 {
+  background-color: #ad0000; }
+
+.red-light-2 {
+  background-color: #ff5252; }
+
+.red-dark-3 {
+  background-color: #850000; }
+
+.red-light-3 {
+  background-color: #ff7a7a; }
+
+.red-dark-4 {
+  background-color: #5c0000; }
+
+.red-light-4 {
+  background-color: #ffa3a3; }
+
+.green-base {
+  background-color: green; }
+
+.green-dark-1 {
+  background-color: #006700; }
+
+.green-light-1 {
+  background-color: #009a00; }
+
+.green-dark-2 {
+  background-color: #004d00; }
+
+.green-light-2 {
+  background-color: #00b300; }
+
+.green-dark-3 {
+  background-color: #003400; }
+
+.green-light-3 {
+  background-color: #00cd00; }
+
+.green-dark-4 {
+  background-color: #001a00; }
+
+.green-light-4 {
+  background-color: #00e600; }
+
+.blue-base {
+  background-color: blue; }
+
+.blue-dark-1 {
+  background-color: #0000c7; }
+
+.blue-light-1 {
+  background-color: #3838ff; }
+
+.blue-dark-2 {
+  background-color: #00008f; }
+
+.blue-light-2 {
+  background-color: #7070ff; }
+
+.blue-dark-3 {
+  background-color: #000057; }
+
+.blue-light-3 {
+  background-color: #a8a8ff; }
+
+.blue-dark-4 {
+  background-color: #00001f; }
+
+.blue-light-4 {
+  background-color: #e0e0ff; }

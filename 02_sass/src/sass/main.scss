@@ -1,0 +1,45 @@
+//change import to test
+@import "themeA.scss";
+//@import "themeB.scss";
+
+body {
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+
+p {
+  &.font-principal {
+    font-family: $fontFamilyPrincipal;
+  }
+  &.font-secondary {
+    font-family: $fontFamilySecondary;
+  }
+}
+
+div > p {
+  padding: 5% 0 0 5%;
+}
+
+.box {
+  width: 15vh;
+  height: 15vh;
+  border: 1px solid black;
+  text-align: start;
+  border-radius: $borderRadius;
+
+  &.shadow {
+    box-shadow: 0.8em * $boxShadowFactor 0.8em 1em;
+  }
+
+  &.base-color {
+    background-color: $baseColor;
+  }
+
+  &.dark-color {
+    background-color: darken($baseColor, 30);
+  }
+
+  &.light-color {
+    background-color: lighten($baseColor, 30);
+  }
+
+}

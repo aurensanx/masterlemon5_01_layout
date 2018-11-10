@@ -1,0 +1,48 @@
+@import "reset.scss";
+@import "layout.scss";
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.main-display {
+  width: 1000px;
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.content-a {
+  grid-area: content-a;
+  background-color: yellow;
+}
+
+.content-b {
+  grid-area: content-b;
+  background-color: blue;
+}
+
+@media screen and (min-width: 62.5rem) {
+  .main-content {
+    @include full-resolution;
+  }
+}
+
+@media screen and (max-width: 62.4rem) and (min-width: 42rem) {
+  .main-content {
+    @include medium-resolution;
+  }
+}
+
+@media screen and (max-width: 41.9rem) {
+  .main-content {
+    @include small-resolution;
+  }
+}
